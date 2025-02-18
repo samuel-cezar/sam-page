@@ -1,0 +1,17 @@
+# amplify.yml
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - npm ci  # or yarn install
+    build:
+      commands:
+        - npm run build  # or your build command
+  artifacts:
+    baseDirectory: build  # or dist/public depending on your framework
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - node_modules/**/*
