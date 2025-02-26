@@ -1,7 +1,7 @@
 /* PREGENERATED CODE */
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Space Mono", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -106,7 +106,10 @@ a {
     width: 90%;
     margin: 0 auto;
     font-size: 1.2em;
-    flex-direction: column;
     gap: 0.5em;
+
+    p {
+      display: none;
+    }
   }
 }

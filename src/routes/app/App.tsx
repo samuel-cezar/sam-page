@@ -85,7 +85,7 @@ export const App = () => {
   return (
     <>
       <Menu />
-      <motion.div className='App' initial={{ scale: 0, opacity: 0 }} animate={{ scale: 1.5, opacity: 1 }}>
+      <motion.div className="text-container" initial={{ scale: 0, opacity: 0 }} animate={{ scale: 1, opacity: 1 }}>
         {phrases[index]}
       </motion.div>
     </>

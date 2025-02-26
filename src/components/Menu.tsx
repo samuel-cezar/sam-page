@@ -10,7 +10,7 @@ export const Menu = () => {
             <motion.div className="menu-container">
                 <Button onTap={() => navigate('/')} textContent="Home" />
                 <Button onTap={() => navigate('/portfolio')} textContent="Portfolio" />
-                <p> ⚠️ This page is still under construction</p>
+                <p className="disclaimer"> ⚠️ This page is still under construction</p>
             </motion.div>
         </>
     );
