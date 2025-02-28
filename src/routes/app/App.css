@@ -8,6 +8,7 @@
 .text-container {
   @media (max-width: 900px) {
     display: flex;
+    overflow: auto;
     p {
       display: block;
     }
