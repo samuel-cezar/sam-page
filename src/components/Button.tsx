@@ -3,9 +3,10 @@ import { motion } from "motion/react"
 interface ButtonProps {
     textContent: string;
     onTap: Function;
+    className?: string;
 }
 
-export const Button = ({ textContent, onTap }: ButtonProps) => {
+export const Button = ({ textContent, onTap, className }: ButtonProps) => {
     return (
         <motion.button
             style={{ borderRadius: '0px' }}
@@ -18,6 +19,7 @@ export const Button = ({ textContent, onTap }: ButtonProps) => {
                 transition: { duration: 0.2 },
             }}
             whileTap={{ scale: 0.9 }}
+            className={className || ""}
         >
             {textContent}
         </motion.button>
